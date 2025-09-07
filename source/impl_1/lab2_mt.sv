@@ -23,7 +23,7 @@ module lab2_mt(
 		hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(clk));
 		
 	led_adder   leds(onboard_sw, bboard_sw, led);
-	sev_seg_sel selector(clk, onboard_sw, bboard_sw, sw, seg1sel, seg2sel);
+	sev_seg_sel selector(clk, onboard_sw, bboard_sw, seg1sel, seg2sel, sw);
 	sev_seg     dual_segs(sw, seg);
 
 endmodule

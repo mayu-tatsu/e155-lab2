@@ -1,0 +1,4 @@
+ldc_set_location -site {37} [get_ports {onboard_sw[0]}]
+ldc_set_location -site {31} [get_ports {onboard_sw[1]}]
+ldc_set_location -site {35} [get_ports {onboard_sw[2]}]
+ldc_set_location -site {32} [get_ports {onboard_sw[3]}]
