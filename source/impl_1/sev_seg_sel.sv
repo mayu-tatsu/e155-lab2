@@ -19,11 +19,13 @@ module sev_seg_sel(
 
 	logic [31:0] counter;
 	logic alternate_led;
+		
 	
 	// converting 6 MHz clk into 100 Hz output by alternate_led
+	// 6,000,000 / 100 = 60,000 / 2 = 30,000
 
 	always_ff @(posedge clk) begin
-		if      (~reset) begin
+		if (~reset) begin
 			counter <= 1'b0;
 			alternate_led <= 1'b0;
 		end
@@ -34,9 +36,8 @@ module sev_seg_sel(
 		end
 	end
 
-
     always_comb begin
-        if (~alternate_led) begin
+        if (alternate_led) begin
 			seg2en = 1'b0;
 			seg1en = 1'b1;
 			sw = onboard_sw;
