@@ -9,8 +9,9 @@
 // do we need a reset?
 
 module lab2_mt(
+	input  logic       reset,
 	input  logic [3:0] onboard_sw, bboard_sw,
-	output logic       seg1sel, seg2sel,
+	output logic       seg1en, seg2en,
 	output logic [4:0] led,
 	output logic [6:0] seg
 );
@@ -18,12 +19,12 @@ module lab2_mt(
 	logic clk;
 	logic [6:0] sw;
 
-	// 24 MHz clk generation
-	HSOSC #(.CLKHF_DIV(2'b01))
+	// 6 MHz clk generation
+	HSOSC #(.CLKHF_DIV(2'b11))
 		hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(clk));
 		
 	led_adder   leds(onboard_sw, bboard_sw, led);
-	sev_seg_sel selector(clk, onboard_sw, bboard_sw, seg1sel, seg2sel, sw);
+	sev_seg_sel selector(clk, reset, onboard_sw, bboard_sw, seg1en, seg2en, sw);
 	sev_seg     dual_segs(sw, seg);
 
 endmodule

@@ -1,0 +1,178 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading project lab2_mt_tests
+# Compile of lab2_mt.sv was successful.
+# Compile of led_adder.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of testbench_lab2_mt.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui testbench_
+# vsim -gui testbench_ 
+# Start time: 17:39:15 on Sep 07,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: (vopt-11) Could not find work.testbench_.
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 17:39:16 on Sep 07,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 5
+# Optimization canceled
+vsim -gui sim.testbench_lab2_mt {-voptargs=+acc -L iCE40UP} -L iCE40UP
+# vsim -gui sim.testbench_lab2_mt -voptargs="+acc -L iCE40UP" -L iCE40UP 
+# Start time: 17:41:18 on Sep 07,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error (suppressible): C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/sev_seg_sel.sv(29): (vopt-7061) Variable 'alternate_led' driven in an always_ff block, may not be driven by any other process. See C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/sev_seg_sel.sv(25).
+# Optimization failed
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=1.
+# Error loading design
+# End time: 17:41:19 on Sep 07,2025, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 2
+# Compile of lab2_mt.sv was successful.
+# Compile of led_adder.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv failed with 1 errors.
+# Compile of testbench_lab2_mt.sv was successful.
+# 5 compiles, 1 failed with 1 error.
+# Compile of lab2_mt.sv was successful.
+# Compile of led_adder.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of testbench_lab2_mt.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui {-voptargs=+acc -L iCE40UP} -L iCE40UP sim.testbench_lab2_mt
+# vsim -gui -voptargs="+acc -L iCE40UP" -L iCE40UP sim.testbench_lab2_mt 
+# Start time: 17:44:50 on Sep 07,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error (suppressible): C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/sev_seg_sel.sv(30): (vopt-7061) Variable 'alternate_led' driven in an always_ff block, may not be driven by any other process. See C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/sev_seg_sel.sv(25).
+# ** Error (suppressible): C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/sev_seg_sel.sv(33): (vopt-7061) Variable 'alternate_led' driven in an always_ff block, may not be driven by any other process. See C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/sev_seg_sel.sv(25).
+# Optimization failed
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=3, Warnings=1.
+# Error loading design
+# End time: 17:44:51 on Sep 07,2025, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 4
+# Compile of lab2_mt.sv was successful.
+# Compile of led_adder.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of testbench_lab2_mt.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui {-voptargs=+acc -L iCE40UP} -L iCE40UP sim.testbench_lab2_mt
+# vsim -gui -voptargs="+acc -L iCE40UP" -L iCE40UP sim.testbench_lab2_mt 
+# Start time: 17:47:02 on Sep 07,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_lab2_mt(fast)
+# Loading work.lab2_mt(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.led_adder(fast)
+# Loading work.sev_seg_sel(fast)
+# Loading work.sev_seg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_lab2_mt/dut File: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'reset'. The port definition is at: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/lab2_mt.sv(12).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_lab2_mt/dut File: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'bboard_sw'. The port definition is at: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/lab2_mt.sv(13).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_lab2_mt/dut File: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (5) for port 'seg2en'. The port definition is at: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/lab2_mt.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_lab2_mt/dut File: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (7) for port 'led'. The port definition is at: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/lab2_mt.sv(15).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_lab2_mt/dut File: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv Line: 23
+# ** Warning: (vsim-3722) C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv(23): [TFMPC] - Missing connection for port 'seg'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (7) for port 'sw'. The port definition is at: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/sev_seg_sel.sv(17).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_lab2_mt/dut/selector File: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/lab2_mt.sv Line: 27
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (7) for port 'sw'. The port definition is at: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/sev_seg.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_lab2_mt/dut/dual_segs File: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/lab2_mt.sv Line: 28
+add wave  \
+sim:/testbench_lab2_mt/clk \
+sim:/testbench_lab2_mt/reset \
+sim:/testbench_lab2_mt/onboard_sw \
+sim:/testbench_lab2_mt/bboard_sw \
+sim:/testbench_lab2_mt/seg1en \
+sim:/testbench_lab2_mt/seg2en \
+sim:/testbench_lab2_mt/led \
+sim:/testbench_lab2_mt/seg \
+sim:/testbench_lab2_mt/vectornum \
+sim:/testbench_lab2_mt/errors
+run 1000000000
+# seg1en is disabled
+# led logic is wrong
+# segment logic is wrong
+# seg1en is enabled
+# seg2en is disabled
+# led logic is wrong
+# segment logic is wrong
+# Compile of lab2_mt.sv was successful.
+# Compile of led_adder.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of testbench_lab2_mt.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui {-voptargs=+acc -L iCE40UP} -L iCE40UP sim.testbench_lab2_mt
+# End time: 17:54:29 on Sep 07,2025, Elapsed time: 0:07:27
+# Errors: 0, Warnings: 12
+# vsim -gui -voptargs="+acc -L iCE40UP" -L iCE40UP sim.testbench_lab2_mt 
+# Start time: 17:54:29 on Sep 07,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_lab2_mt(fast)
+# Loading work.lab2_mt(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.led_adder(fast)
+# Loading work.sev_seg_sel(fast)
+# Loading work.sev_seg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_lab2_mt/dut File: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'reset'. The port definition is at: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/lab2_mt.sv(12).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_lab2_mt/dut File: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'bboard_sw'. The port definition is at: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/lab2_mt.sv(13).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_lab2_mt/dut File: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (5) for port 'seg2en'. The port definition is at: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/lab2_mt.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_lab2_mt/dut File: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (7) for port 'led'. The port definition is at: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/lab2_mt.sv(15).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_lab2_mt/dut File: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv Line: 23
+# ** Warning: (vsim-3722) C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv(23): [TFMPC] - Missing connection for port 'seg'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (7) for port 'sw'. The port definition is at: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/sev_seg_sel.sv(17).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_lab2_mt/dut/selector File: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/lab2_mt.sv Line: 27
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (7) for port 'sw'. The port definition is at: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/sev_seg.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_lab2_mt/dut/dual_segs File: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/lab2_mt.sv Line: 28
+add wave  \
+sim:/testbench_lab2_mt/clk \
+sim:/testbench_lab2_mt/reset \
+sim:/testbench_lab2_mt/onboard_sw \
+sim:/testbench_lab2_mt/bboard_sw \
+sim:/testbench_lab2_mt/seg1en \
+sim:/testbench_lab2_mt/seg2en \
+sim:/testbench_lab2_mt/led \
+sim:/testbench_lab2_mt/seg \
+sim:/testbench_lab2_mt/vectornum \
+sim:/testbench_lab2_mt/errors
+run 1000000000
+# seg1en is disabled
+# led logic is wrong
+# segment logic is wrong
+# seg1en is enabled
+# seg2en is disabled
+# led logic is wrong
+# segment logic is wrong
