@@ -176,3 +176,56 @@ run 1000000000
 # seg2en is disabled
 # led logic is wrong
 # segment logic is wrong
+# Compile of lab2_mt.sv was successful.
+# Compile of led_adder.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of testbench_lab2_mt.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui {-voptargs=+acc -L iCE40UP} -L iCE40UP sim.testbench_lab2_mt
+# End time: 18:22:00 on Sep 07,2025, Elapsed time: 0:27:31
+# Errors: 0, Warnings: 11
+# vsim -gui -voptargs="+acc -L iCE40UP" -L iCE40UP sim.testbench_lab2_mt 
+# Start time: 18:22:00 on Sep 07,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_lab2_mt(fast)
+# Loading work.lab2_mt(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.led_adder(fast)
+# Loading work.sev_seg_sel(fast)
+# Loading work.sev_seg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_lab2_mt/dut File: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'reset'. The port definition is at: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/lab2_mt.sv(12).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_lab2_mt/dut File: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'bboard_sw'. The port definition is at: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/lab2_mt.sv(13).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_lab2_mt/dut File: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (5) for port 'seg2en'. The port definition is at: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/lab2_mt.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_lab2_mt/dut File: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (7) for port 'led'. The port definition is at: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/lab2_mt.sv(15).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_lab2_mt/dut File: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv Line: 23
+# ** Warning: (vsim-3722) C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv(23): [TFMPC] - Missing connection for port 'seg'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (7) for port 'sw'. The port definition is at: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/sev_seg_sel.sv(17).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_lab2_mt/dut/selector File: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/lab2_mt.sv Line: 27
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (7) for port 'sw'. The port definition is at: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/sev_seg.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_lab2_mt/dut/dual_segs File: C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/lab2_mt.sv Line: 28
+add wave  \
+sim:/testbench_lab2_mt/clk \
+sim:/testbench_lab2_mt/reset \
+sim:/testbench_lab2_mt/onboard_sw \
+sim:/testbench_lab2_mt/bboard_sw \
+sim:/testbench_lab2_mt/seg1en \
+sim:/testbench_lab2_mt/seg2en \
+sim:/testbench_lab2_mt/led \
+sim:/testbench_lab2_mt/seg \
+sim:/testbench_lab2_mt/vectornum \
+sim:/testbench_lab2_mt/errors
+run 200000
+# seg1en is disabled
+# seg2en is enabled
+# segment logic is wrong
+# End time: 18:22:49 on Sep 07,2025, Elapsed time: 0:00:49
+# Errors: 0, Warnings: 10

@@ -1,4 +1,18 @@
-C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/sev_seg.sv {1 {vlog -work sim -vopt -sv -stats=none C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/sev_seg.sv
+C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/sev_seg_sel.sv {1 {vlog -work sim -vopt -sv -stats=none C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/sev_seg_sel.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module sev_seg_sel
+
+Top level modules:
+	sev_seg_sel
+
+} {} {}} C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv {1 {vlog -work sim -vopt -sv -stats=none C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module testbench_lab2_mt
+
+Top level modules:
+	testbench_lab2_mt
+
+} {} {}} C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/sev_seg.sv {1 {vlog -work sim -vopt -sv -stats=none C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/sev_seg.sv
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module sev_seg
 
