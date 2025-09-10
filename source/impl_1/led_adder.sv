@@ -13,8 +13,8 @@ module led_adder(
 	output logic [4:0] led
 );
 
-	logic [3:0] onboard_val;
-	logic [3:0] bboard_val;
+    logic [3:0] onboard_val;
+    logic [3:0] bboard_val;
 
     assign onboard_val = ~onboard_sw;
     assign bboard_val = ~bboard_sw;

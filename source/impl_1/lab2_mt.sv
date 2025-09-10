@@ -2,11 +2,10 @@
 // Mayu Tatsumi; mtatsumi@g.hmc.edu
 // 2025-09-06
 
-// Top-level module generating a 24MHz clk through the HSOSC module
-// and instantiating all of the necessary modules to create desired
-// outputs from inputs.
+// Top-level module instantiating all necessary modules to create desired
+// outputs from switch inputs.
 
-// do we need a reset?
+// Note: Switches are active low.
 
 module lab2_mt(
 	input  logic       reset,
@@ -19,7 +18,7 @@ module lab2_mt(
 	logic       clk;
 	logic [6:0] sw;
 		
-	clk_gen 	 clk_generation(clk);
+	clk_gen     clk_generation(clk);
 	led_adder   leds(onboard_sw, bboard_sw, led);
 	sev_seg_sel selector(clk, reset, onboard_sw, bboard_sw, seg1en, seg2en, sw);
 	sev_seg     dual_segs(sw, seg);

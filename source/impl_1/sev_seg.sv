@@ -5,8 +5,7 @@
 // Uses combinational logic to convert a 4-bit binary input
 // to a 7-segment display output, between 0 and F (hexadecimal).
 
-// Note: Input and output are active low. yeah no
-
+// Note: Input and output are active both low.
 
 module sev_seg(
 	input  logic [3:0] sw,
