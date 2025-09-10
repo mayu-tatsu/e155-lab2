@@ -16,13 +16,10 @@ module lab2_mt(
 	output logic [6:0] seg
 );
 
-	logic clk;
+	logic       clk;
 	logic [6:0] sw;
-
-	// 6 MHz clk generation
-	HSOSC #(.CLKHF_DIV(2'b11))
-		hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(clk));
 		
+	clk_gen 	 clk_generation(clk);
 	led_adder   leds(onboard_sw, bboard_sw, led);
 	sev_seg_sel selector(clk, reset, onboard_sw, bboard_sw, seg1en, seg2en, sw);
 	sev_seg     dual_segs(sw, seg);

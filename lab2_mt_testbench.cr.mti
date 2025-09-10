@@ -1,0 +1,64 @@
+C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_sev_seg_sel.sv {1 {vlog -work lab2 -vopt -sv -stats=none C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_sev_seg_sel.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module testbench_sev_seg_sel
+
+Top level modules:
+	testbench_sev_seg_sel
+
+} {} {}} C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_clk_gen.sv {1 {vlog -work lab2 -vopt -sv -stats=none C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_clk_gen.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module testbench_clk_gen
+
+Top level modules:
+	testbench_clk_gen
+
+} {} {}} C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_sev_seg.sv {1 {vlog -work lab2 -vopt -sv -stats=none C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_sev_seg.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module testbench_sev_seg
+
+Top level modules:
+	testbench_sev_seg
+
+} {} {}} C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_led_adder.sv {1 {vlog -work lab2 -vopt -sv -stats=none C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_led_adder.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module testbench_led_adder
+
+Top level modules:
+	testbench_led_adder
+
+} {} {}} C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/sev_seg_sel.sv {1 {vlog -work lab2 -vopt -sv -stats=none C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/sev_seg_sel.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module sev_seg_sel
+
+Top level modules:
+	sev_seg_sel
+
+} {} {}} C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/clk_gen.sv {1 {vlog -work lab2 -vopt -sv -stats=none C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/clk_gen.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module clk_gen
+
+Top level modules:
+	clk_gen
+
+} {} {}} C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv {1 {vlog -work lab2 -vopt -sv -stats=none C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/testbench_lab2_mt.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module testbench_lab2_mt
+
+Top level modules:
+	testbench_lab2_mt
+
+} {} {}} C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/led_adder.sv {1 {vlog -work lab2 -vopt -sv -stats=none C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/led_adder.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module led_adder
+
+Top level modules:
+	led_adder
+
+} {} {}} C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/lab2_mt.sv {1 {vlog -work lab2 -vopt -sv -stats=none C:/Users/mtatsumi/my_designs/e155-lab2/source/impl_1/lab2_mt.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module lab2_mt
+
+Top level modules:
+	lab2_mt
+
+} {} {}}
